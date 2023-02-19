@@ -13,6 +13,7 @@ body {
 }
 
 .header {
+    padding-top: 1.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +34,9 @@ body {
 
 #instruction {
     color: #1c7c24;
-    padding: 0.5vh;
+    padding: 2vh;
+    font-size: 2.30vh;
+    text-align: center;
 }
 
 .right {
@@ -45,4 +48,16 @@ body {
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
     border-radius: 1.5vh;
+}
+
+.carddisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
 }

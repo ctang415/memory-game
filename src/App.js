@@ -5,17 +5,21 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
          Maple, Marshal, Merengue, Nibbles, Pietro, Raymond, Roald, Sherb } from "./images";
 
   const App = () => {
-    const images = [ Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily, 
-      Maple, Marshal, Merengue, Nibbles, Pietro, Raymond, Roald, Sherb ]
+    const villagers = [ 
+      {url: Broccolo, character: "Broccolo"}, {url: Chester, character: 'Chester'}, {url: Cousteau, character: 'Cousteau'}, 
+      {url: Dizzy, character: "Dizzy"}, {url: Francine, character:"Francine"}, 
+      {url: Eunice, character: 'Eunice'}, {url: Ketchup, character: 'Ketchup'}, 
+      {url: Lily, character: 'Lily'}, {url: Maple, character: 'Maple'}, 
+      {url: Marshal, character: 'Marshal'}, {url: Merengue, character: 'Merengue'}, 
+      {url: Nibbles, character:'Nibbles'}, {url: Pietro, character: 'Pietro'},  
+      {url: Raymond, character: 'Raymond'}, {url: Roald, character: 'Roald'}, {url: Sherb, character: 'Sherb'} 
+    ]
     
     const [score, setScore] = useState(0)
 
     const [record, setRecord] = useState(0)
 
-    const [cards, setCards] = useState({
-      photo: Broccolo,
-      name: ''
-    })
+    const [cards, setCards] = useState([])
 
     const shuffleArray = (array) => {
       let i, j, index;
@@ -29,7 +33,8 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
     }
 
     useEffect(() => {
-      shuffleArray(cards)
+      setCards(villagers)
+      console.log(cards)
     }, [])
   
     return (
@@ -44,9 +49,11 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
           <span>Current Score: {score}</span>
           <span>High Score: {record}</span>
         </div>
-          <Card
+        <div className="carddisplay">
+          <Card 
           cards={cards}
           />
+          </div>
         </div>
     </div>
   );
