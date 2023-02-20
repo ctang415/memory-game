@@ -173,6 +173,7 @@ img {
     }
 
     .right {
+        display: flex;
         color: #786951;
         background-color: #f8eebc;
         font-size: 2vh;
