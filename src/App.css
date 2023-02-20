@@ -5,6 +5,11 @@ body {
     background-color: #9BE2C3;
 }
 
+img {
+    width: 80%;
+    border-radius: 0.5vh;
+}
+
 .app {
     display: flex;
     justify-content: center;
@@ -16,7 +21,7 @@ body {
     color: #f5c24c;
     padding: 2vh;
     font-family: "Audiowide";
-    font-size: 7vh;
+    font-size: 9vh;
     text-align: center;
 }
 
@@ -60,6 +65,8 @@ body {
 }
 
 .carddisplay {
+    margin-left: 6vh;
+    margin-right: 6vh;
     display: grid;
     grid-template-columns: repeat(4, minmax(5rem, 1fr));
     gap: 5vh;
@@ -68,10 +75,12 @@ body {
 .characters {
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    align-items: center;
     background-color: #f6eeee;
-    padding-left: 3.5vh;
-    padding-right: 3.5vh;
-    padding-bottom: 8vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    padding-bottom: 7vh;
     border-radius: 3vh;
 }
 
@@ -176,6 +185,7 @@ body {
     .carddisplay {
         display: grid;
         gap: 2vh;
+        margin: 0;
     }
 
     .characters {
@@ -201,43 +211,43 @@ body {
         height: auto;
     }
 
-.modal {  
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+    .modal {  
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
 
-.modaltext {
-    text-align: center;
-    display: flex;
-    font-family: 'Capriola';
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 2vh;
-    align-items: center;
-    background-color: #fff9e5;
-    color:#786951;
-    margin: 50% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
-    font-size: 2.3vh;
-    gap: 1vh;
-}
+    .modaltext {
+        text-align: center;
+        display: flex;
+        font-family: 'Capriola';
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 2vh;
+        align-items: center;
+        background-color: #fff9e5;
+        color:#786951;
+        margin: 50% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%; /* Could be more or less, depending on screen size */
+        font-size: 2.3vh;
+        gap: 1vh;
+    }
 
-.button {
-    font-family: 'Capriola';
-    color: #786951;
-    background-color: #f8eebc;
-    border: none;
-    border-radius: 1vh;
-    padding: 1.5vh;
-}
+    .button {
+        font-family: 'Capriola';
+        color: #786951;
+        background-color: #f8eebc;
+        border: none;
+        border-radius: 1vh;
+        padding: 1.5vh;
+    }
 
 }
