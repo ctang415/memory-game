@@ -75,7 +75,7 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
   }, [score])
 
     return (
-      <div>
+      <div className="app">
         <div className="header">
           <div className="left">
           <span id="headertext" className="title">Animal Crossing Memory Game</span>
@@ -91,12 +91,12 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
         setModal={setModal}
         modal={modal}
         />
-        <div className="carddisplay">
-          <Card 
-          cards={cards}
-          addClicks={addClicks}
-          setNewCards={setNewCards}
-          />
+          <div className="carddisplay">
+            <Card 
+            cards={cards}
+            addClicks={addClicks}
+            setNewCards={setNewCards}
+            />
           </div>
     </div>
   );
