@@ -34,6 +34,22 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
       }
       return array
     }
+
+    const addClicks = (e) => {
+      if (clicks.includes(e.target.parentNode.id) === false) {
+        setClicks(clicks => [...clicks, e.target.parentNode.id])
+        setScore(score + 1)
+        console.log(clicks)
+      } else if (clicks.includes(e.target.parentNode.id)) {
+        if (record < score) {
+          setClicks([])
+          setRecord(score)
+          setScore(0)
+        }
+        setClicks([])
+        setScore(0)
+      }
+    }
     
     const setNewCards = (cards) => {
       shuffleArray(cards)
@@ -44,7 +60,7 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
       shuffleArray(villagers)
       setCards(villagers)
       console.log(cards)
-    }, [])
+  }, [setCards])
 
     return (
       <div>
@@ -62,8 +78,7 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
         <div className="carddisplay">
           <Card 
           cards={cards}
-          setCards={setCards}
-          shuffleArray={shuffleArray}
+          addClicks={addClicks}
           setNewCards={setNewCards}
           />
           </div>
