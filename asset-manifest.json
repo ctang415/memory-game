@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.d7435425.css",
+    "main.js": "/memory-game/static/js/main.c40eed3d.js",
+    "static/media/pietro.png": "/memory-game/static/media/pietro.d52cebc72974d01fe008.png",
+    "static/media/ketchup.png": "/memory-game/static/media/ketchup.a26a8b8602e1b242f73b.png",
+    "static/media/raymond.png": "/memory-game/static/media/raymond.c43c9fbea922074ab34f.png",
+    "static/media/merengue.png": "/memory-game/static/media/merengue.95a406fac23fbf176ea5.png",
+    "static/media/marshal.png": "/memory-game/static/media/marshal.6bfdac7a6d9704ca00a1.png",
+    "static/media/eunice.png": "/memory-game/static/media/eunice.6a574b4cf2124c4206e1.png",
+    "static/media/lily.png": "/memory-game/static/media/lily.a4495a77d46162f3c682.png",
+    "static/media/maple.png": "/memory-game/static/media/maple.71e4976f31563d7bc618.png",
+    "static/media/broccolo.png": "/memory-game/static/media/broccolo.ede638fad4bf5b0bdc3b.png",
+    "static/media/nibbles.png": "/memory-game/static/media/nibbles.34a4d50005b48620020b.png",
+    "static/media/sherb.png": "/memory-game/static/media/sherb.f5d87b8c919ba14657cf.png",
+    "static/media/chester.png": "/memory-game/static/media/chester.e965076ba27a0b12dd9e.png",
+    "static/media/cousteau.png": "/memory-game/static/media/cousteau.f9367a172fad4fd3cc2e.png",
+    "static/media/francine.png": "/memory-game/static/media/francine.86b135b1c989b00caa06.png",
+    "static/media/dizzy.png": "/memory-game/static/media/dizzy.ecbf15af38ab06527a4d.png",
+    "static/media/roald.png": "/memory-game/static/media/roald.16e21e6bad61e845fa95.png",
+    "index.html": "/memory-game/index.html",
+    "main.d7435425.css.map": "/memory-game/static/css/main.d7435425.css.map",
+    "main.c40eed3d.js.map": "/memory-game/static/js/main.c40eed3d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7435425.css",
+    "static/js/main.c40eed3d.js"
+  ]
+}
