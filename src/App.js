@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import Card from './components/Card'
+import Modal from "./components/Modal";
 import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily, 
          Maple, Marshal, Merengue, Nibbles, Pietro, Raymond, Roald, Sherb } from "./images";
 
@@ -23,6 +24,8 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
     const [cards, setCards] = useState([])
 
     const [clicks, setClicks] = useState([])
+
+    const [modal, setModal] = useState(false)
 
     const shuffleArray = (array) => {
       let i, j, index;
@@ -62,6 +65,15 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
       console.log(cards)
   }, [setCards])
 
+  useEffect(() => {
+    if (score === 16) {
+      setModal(true)
+      setRecord(score)
+      setClicks([])
+      setScore(0)
+    }
+  }, [score])
+
     return (
       <div>
         <div className="header">
@@ -75,6 +87,10 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
           <span>High Score: {record}</span>
         </div>
         </div>
+        <Modal
+        setModal={setModal}
+        modal={modal}
+        />
         <div className="carddisplay">
           <Card 
           cards={cards}
