@@ -62,6 +62,7 @@ img {
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
     border-radius: 1.5vh;
+    text-align: center;
 }
 
 .carddisplay {
@@ -180,6 +181,7 @@ img {
         padding-top: 1vh;
         padding-bottom: 1vh;
         border-radius: 1.5vh;
+        text-align: center;
     }
 
     .carddisplay {
