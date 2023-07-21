@@ -1,12 +1,12 @@
 import React from "react";
 
-const Card = ({cards, setNewCards, addClicks}) => {
+const Card = ({villager, addClicks}) => {
     return (
-    cards.map((card) => {
+    villager.map((villager) => {
         return (
-            <div key={card.character} id={card.character} className="characters" onClick={(e) => { console.log(e.target.parentNode.id); addClicks(e); setNewCards(cards)}}>
-                <img src={card.url} alt={card.character}></img>
-                <span>{card.character}</span>
+            <div key={villager.name} id={villager.name} className="characters" onClick={(e) => { addClicks(e)}}>
+                <img src={villager.image} alt={villager.name}></img>
+                <span>{villager.name}</span>
             </div>
         )
     })
