@@ -23,7 +23,7 @@ import { Broccolo, Cousteau, Chester, Dizzy, Francine, Eunice, Ketchup, Lily,
         Promise.all([ids.forEach(id => {
           const callAPI = async (id) => {
             try {
-              const response = await fetch(`http://acnhapi.com/v1/villagers/${id}`, {mode: 'cors'})
+              const response = await fetch(`https://acnhapi.com/v1/villagers/${id}`, {mode: 'cors'})
               if (!response.ok) {
                 throw new Error(
                   `This is an HTTP error: The status is ${response.status}`
